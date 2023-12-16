@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.bg-hero {
+  background: linear-gradient(#FFF8, transparent 1px, transparent 63px, #FFF8 63px),
+    linear-gradient(90deg, #FFF8, transparent 1px, transparent 63px, #FFF8 63px),
+    radial-gradient(at bottom left, #FFF 0%, #FFF 3%, #FFF0 3%),
+    radial-gradient(at bottom right, #FFF 0%, #FFF 3%, #FFF0 3%),
+    radial-gradient(at top left, #FFF 0%, #FFF 3%, #FFF0 3%),
+    radial-gradient(at top right, #FFF 0%, #FFF 3%, #FFF0 3%);
+  background-size: 64px 64px;
+  position: relative;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bg-hero::after {
+  content: "";
+  background: radial-gradient(#0a0a0abf, #09090b 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

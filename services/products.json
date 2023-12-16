@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "title": "T-shirt JVLIVS",
+    "price": 49,
+    "image": "/products/tee/album-1.png"
+  },
+  {
+    "id": 2,
+    "title": "T-shirt OG enfermés",
+    "price": 49,
+    "image": "/products/tee/free-og.png"
+  },  {
+    "id": 3,
+    "title": "T-shirt AD Nueve",
+    "price": 9,
+    "image": "/products/tee/album-1.png"
+  },
+  {
+    "id": 4,
+    "title": "T-shirt Ballon d'Or",
+    "price": 99,
+    "image": "/products/tee/free-og.png"
+  }
+]

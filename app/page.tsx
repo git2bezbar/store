@@ -1,4 +1,5 @@
 import ProductCard from './@products/page';
+import products from '../services/products.json';
 
 export default function Home() {
   return (
@@ -9,9 +10,20 @@ export default function Home() {
       <div className="flex flex-col gap-16 mb-32 items-center">
         <h2 className="text-6xl font-bold text-center tracking-tight">Nos derniers bangers</h2>
         <div className="grid grid-cols-3 items-start gap-4">
-          <ProductCard className="scale-90"/>
-          <ProductCard className="scale-105"/>
-          <ProductCard className="scale-90"/>
+          {
+            products.slice(0, 3).map((product, i) => {
+              return (
+                <ProductCard
+                  className={`${i === 1 ? "scale-105" : "scale-90"}`}
+                  key={i}
+                  title={product.title}
+                  price={product.price}
+                  image={product.image}
+                  productId={product.id}
+                />
+              )
+            })
+          }
         </div>
         <button className="px-4 py-2 w-[300px] bg-black/50 backdrop-blur rounded-lg border border-white/20 duration-300 hover:bg-white/20">Voir tous les produits</button>
       </div>

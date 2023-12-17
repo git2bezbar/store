@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Footer() {
   return(
     <footer className="p-4 lg:px-16 py-8">
@@ -13,14 +15,31 @@ export default function Footer() {
             <li>Tous les produits</li>
             <li>T-shirts</li>
             <li>Accessoires</li>
+            <li>
+              <Link href="/about">
+                À propos
+              </Link>
+            </li>
           </ul>
         </nav>
         <nav>
           <ul className="flex flex-col gap-4">
             <li className="font-bold text-lg">Légal</li>
-            <li>Mentions légales</li>
-            <li>Conditions générales de ventes</li>
-            <li>Conditions d&apos;utilisation</li>
+            <li>
+              <Link href="/legal-notices">
+                Mentions légales
+              </Link>
+            </li>
+            <li>
+              <Link href="/terms">
+                Conditions générales de ventes
+              </Link>
+            </li>
+            <li>
+              <Link href="/conditions-of-use">
+                Conditions d&apos;utilisation
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className="flex flex-col gap-4 max-w-[650px]">

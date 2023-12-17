@@ -6,6 +6,7 @@ export interface ProductCardProps extends ComponentPropsWithoutRef<"div"> {
   price: number,
   image: string,
   productId: number,
+  type: string
 }
 
 export default function ProductCard({
@@ -13,7 +14,8 @@ export default function ProductCard({
   title,
   price,
   image,
-  productId
+  productId,
+  type
 }:ProductCardProps) {
   return(
     <Link href={`/products/${productId}`}>
@@ -26,7 +28,7 @@ export default function ProductCard({
         />
         <div className="flex flex-col gap-4 items-start">
           <p className="text-xl">{title}</p>
-          <p className="px-4 py-2 rounded-lg border border-white/20 duration-300 group-hover:border-white">{price} €</p>
+          <p className="px-4 py-2 rounded-lg border border-white/20 duration-300 group-hover:border-white">{price} {type === "nft" ? "ETH" : "€"}</p>
           <button className="px-4 py-2 w-full text-red rounded-lg border border-red duration-300 hover:text-black hover:bg-red">Épuisé</button>
         </div>
       </div>

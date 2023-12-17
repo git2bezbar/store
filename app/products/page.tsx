@@ -14,6 +14,7 @@ export default function AllProducts() {
               price={product.price}
               image={product.image}
               productId={product.id}
+              type={product.type}
             />
           )
         })

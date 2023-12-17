@@ -21,6 +21,7 @@ export default function Home() {
                   price={product.price}
                   image={product.image}
                   productId={product.id}
+                  type={product.type}
                 />
               )
             })

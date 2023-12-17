@@ -4,7 +4,7 @@ import Link from "next/link"
 import { useState } from "react";
 
 export default function Header() {
-  const [menuIsActive, setMenuIsActive] = useState(true);
+  const [menuIsActive, setMenuIsActive] = useState(false);
 
   return(
     <header className="p-4 lg:px-16 lg:py-8 pb-0 sticky top-0 z-50 ">

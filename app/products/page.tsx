@@ -4,7 +4,7 @@ import products from '@/services/products.json';
 export default function AllProducts() {
 
   return(
-    <div className="grid grid-cols-3 gap-12 pt-16">
+    <div className="flex flex-wrap justify-center items-center gap-4 lg:gap-12 pt-16 mb-8 md:mb-16 lg:mb-32">
       {
         products.map((product, i) => {
           return (

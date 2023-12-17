@@ -1,29 +1,107 @@
 [
   {
     "id": 1,
-    "title": "T-shirt JVLIVS",
-    "price": 49,
-    "image": "/products/tee/album-1.png",
+    "title": "JVLIVS",
+    "price": 29,
+    "type": "album",
+    "image": "/products/album/front.png",
     "images" : [
-      "/products/tee/album-1.png",
-      "/products/tee/free-og.png"
+      "/products/album/front.png",
+      "/products/album/back.png"
     ]
   },
   {
     "id": 2,
-    "title": "T-shirt OG enfermés",
-    "price": 49,
-    "image": "/products/tee/free-og.png"
-  },  {
+    "title": "JVLIVS + T-shirt noir",
+    "price": 59,
+    "type": "albumAndMerch",
+    "image": "/products/album/merch-1.png",
+    "images" : [
+      "/products/album/merch-1.png",
+      "/products/tee/album-1-back.png",
+      "/products/album/back.png"
+    ]
+  },
+  {
     "id": 3,
-    "title": "T-shirt AD Nueve",
-    "price": 9,
-    "image": "/products/tee/album-1.png"
+    "title": "JVLIVS + T-shirt blanc",
+    "price": 59,
+    "type": "albumAndMerch",
+    "image": "/products/album/merch-2.png",
+    "images" : [
+      "/products/album/merch-2.png",
+      "/products/tee/album-2-back.png",
+      "/products/album/back.png"
+    ]
   },
   {
     "id": 4,
-    "title": "T-shirt Ballon d'Or",
-    "price": 99,
-    "image": "/products/tee/free-og.png"
+    "title": "T-shirt JVLIVS noir",
+    "price": 49,
+    "type": "tee",
+    "image": "/products/tee/album-1.png",
+    "images" : [
+      "/products/tee/album-1.png",
+      "/products/tee/album-1-back.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "T-shirt JVLIVS blanc",
+    "price": 49,
+    "type": "tee",
+    "image": "/products/tee/album-2.png",
+    "images" : [
+      "/products/tee/album-2.png",
+      "/products/tee/album-2-back.png"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "T-shirt OG enfermés",
+    "price": 49,
+    "type": "tee",
+    "image": "/products/tee/free-og.png",
+    "images" : [
+      "/products/tee/free-og.png",
+      "/products/tee/album-2-back.png"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Frida Kahbot (TOTY)",
+    "price": 40410,
+    "type": "fut",
+    "image": "/products/fut/frida-toty.png",
+    "images" : [
+      "/products/fut/frida-toty.png"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "AD Nueve (Ballon d'Or)",
+    "price": 9,
+    "type": "fut",
+    "image": "/products/fut/ad-nueve.png",
+    "images" : [
+      "/products/fut/ad-nueve.png"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "AD_001 - Videur",
+    "price": 9,
+    "type": "nft",
+    "image": "/products/nft/ad-001.png",
+    "images" : [
+      "/products/nft/ad-001.png"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Elden Ring : Shadow of the ADTree",
+    "price": 79,
+    "type": "game",
+    "image": "/products/ps5/case.png"
   }
 ]

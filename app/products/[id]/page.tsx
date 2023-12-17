@@ -55,7 +55,7 @@ export default function SingleProduct({params}:SingleProductProps) {
           </div>
           <div className="flex flex-col">
             <button className="px-4 py-2 text-red rounded-lg border border-red duration-300 hover:text-black hover:bg-red">Épuisé</button>
-            <p className="text-xs text-red p-2 italic">Il semblerait que ce produit soit vicitime de son succès. Pas étonnant après tout.</p>
+            <p className="text-xs text-red p-2 italic">Il semblerait que ce produit soit victime de son succès. Pas étonnant après tout.</p>
           </div>
           <div className="flex flex-col gap-4">
             <p className="font-bold">Description</p>

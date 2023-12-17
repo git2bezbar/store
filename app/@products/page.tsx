@@ -19,7 +19,7 @@ export default function ProductCard({
     <Link href={`/products/${productId}`}>
       <div className={`${className} group relative p-4 rounded-lg border border-white/20 duration-300 hover:border-red`}>
         <img
-          className="duration-300 group-hover:scale-105"
+          className="duration-300 group-hover:scale-105 w-[250px] md:w-[300px] xl:w-[500px]"
           src={image}
           alt="JVLIVS I"
           width={500}

@@ -2,20 +2,30 @@
 
 import Link from "next/link"
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [menuIsActive, setMenuIsActive] = useState(false);
+  const pathname = usePathname();
 
   return(
     <header className="p-4 lg:px-16 lg:py-8 pb-0 sticky top-0 z-50 ">
       <div className="p-4 lg:p-8 flex justify-between items-center bg-black/50 backdrop-blur rounded-lg border border-white/20 relative">
-        <Link href="/">
+        { pathname === "/" ? (
           <img
             className="h-[45px] lg:h-[65px]"
             src="/ad-store.svg"
             alt="Logo AD Store"
           />
-        </Link>
+        ) : (
+          <Link href="/">
+            <img
+              className="h-[45px] lg:h-[65px]"
+              src="/ad-store.svg"
+              alt="Logo AD Store"
+            />
+          </Link>
+        )}
         <nav>
           <ul className="flex gap-8 xl:gap-16 text-lg hidden lg:flex">
             <li>

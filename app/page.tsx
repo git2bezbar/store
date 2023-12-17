@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import ProductCard from './@products/page';
-import products from '../services/products.json';
+import ProductCard from '@/app/@products/page';
+import products from '@/services/products.json';
 
 export default function Home() {
   return (

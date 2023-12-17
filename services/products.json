@@ -3,7 +3,11 @@
     "id": 1,
     "title": "T-shirt JVLIVS",
     "price": 49,
-    "image": "/products/tee/album-1.png"
+    "image": "/products/tee/album-1.png",
+    "images" : [
+      "/products/tee/album-1.png",
+      "/products/tee/free-og.png"
+    ]
   },
   {
     "id": 2,

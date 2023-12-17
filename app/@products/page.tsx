@@ -24,10 +24,10 @@ export default function ProductCard({
           alt="JVLIVS I"
           width={500}
         />
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 items-start">
           <p className="text-xl">{title}</p>
-          <p>{price} €</p>
-          <button className="px-4 py-2 text-red rounded-lg border border-red duration-300 hover:text-black hover:bg-red">Épuisé</button>
+          <p className="px-4 py-2 rounded-lg border border-white/20 duration-300 group-hover:border-white">{price} €</p>
+          <button className="px-4 py-2 w-full text-red rounded-lg border border-red duration-300 hover:text-black hover:bg-red">Épuisé</button>
         </div>
       </div>
     </Link>

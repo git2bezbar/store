@@ -14,9 +14,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: React.ComponentPropsWithRef<any>) {
   return (
     <html lang="fr">
       <body className={`${GeistSans.className} bg-zinc-950 text-white`}>

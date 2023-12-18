@@ -17,7 +17,7 @@ export default function SingleProduct({params}:SingleProductProps) {
   const product = products.slice(--params.id, ++params.id)[0];
   const [activeImage, setActiveImage] = useState(product?.images?.[0] || product.image);
 
-  const handleClick = (e:React.MouseEvent<HTMLElement>) => {
+  const handleClick = (e:React.MouseEvent<HTMLImageElement>) => {
     const newActiveImage = e.currentTarget.src.split("/").slice(4).join("/");
     setActiveImage(newActiveImage);
   }

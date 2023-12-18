@@ -12,14 +12,15 @@ export default function About() {
     const paragraphsArray = gsap.utils.toArray(".gsapParagraphs");
 
     paragraphsArray.forEach(paragraph => {
+      const p: gsap.DOMTarget = paragraph as gsap.DOMTarget;
       gsap.timeline({
         scrollTrigger: {
-          trigger: paragraph,
+          trigger: p,
           start: "bottom bottom",
           end: "+=100",
         }
-      }).from(paragraph, { opacity: 0, y: 100 })
-      .to(paragraph, { opacity: 1, y: 0 });
+      }).from(p, { opacity: 0, y: 100 })
+      .to(p, { opacity: 1, y: 0 });
     })
 
   });

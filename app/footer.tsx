@@ -12,9 +12,16 @@ export default function Footer() {
         <nav>
           <ul className="flex flex-col gap-4">
             <li className="font-bold text-lg">Menu</li>
-            <li>Tous les produits</li>
-            <li>T-shirts</li>
-            <li>Accessoires</li>
+            <li>
+              <Link href="/products">
+                Tous les produits
+              </Link>
+            </li>
+            <li>
+              <Link href="/album">
+                JVLIVS
+              </Link>
+            </li>
             <li>
               <Link href="/about">
                 À propos

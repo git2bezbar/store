@@ -33,8 +33,11 @@ export default function Header() {
                 Tous les produits
               </Link>
             </li>
-            <li>T-shirts</li>
-            <li>Accessoires</li>
+            <li>
+              <Link href="/album">
+                JVLIVS
+              </Link>
+            </li>
             <li>
               <Link href="/about">
                 À propos
@@ -66,8 +69,11 @@ export default function Header() {
                   Tous les produits
                 </Link>
               </li>
-              <li>T-shirts</li>
-              <li>Accessoires</li>
+              <li>
+                <Link href="/album">
+                  JVLIVS
+                </Link>
+              </li>
               <li>
                 <Link href="/about">
                   À propos
